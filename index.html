@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>How WouldYouRather.cc Works</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background: #f9f9f9; color: #333; }
+    pre { background: #eee; padding: 1rem; overflow-x: auto; border-radius: 5px; }
+    a { color: #0077cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>How WouldYouRather.cc Works</h1>
+  <p>This is a fun site that provides random "Would You Rather" questions for games or icebreakers.</p>
+  <h2>Simple Random Question Demo</h2>
+  <pre>
+&lt;button onclick="showQuestion()"&gt;Show Question&lt;/button&gt;
+&lt;div id="question"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+const questions = [
+  "Would you rather fly or be invisible?",
+  "Would you rather have a pet dragon or a pet unicorn?",
+  "Would you rather live in the city or the countryside?"
+];
+
+function showQuestion() {
+  const index = Math.floor(Math.random() * questions.length);
+  document.getElementById('question').textContent = questions[index];
+}
+&lt;/script&gt;
+  </pre>
+  <p>Try it live at <a href="https://wouldyourather.cc" target="_blank" rel="noopener noreferrer">wouldyourather.cc</a></p>
+</body>
+</html>
